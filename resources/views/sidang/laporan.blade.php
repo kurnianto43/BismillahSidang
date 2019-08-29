@@ -90,7 +90,7 @@
                                 opacity: 0.95;
                                 padding: 10px;
                                 text-align: center;"
-                        >973/{{ $sidang->nama_mahasiswa }} </td>
+                        >{{ $sidang->nama_mahasiswa }} </td>
                     <td style="border : 1px solid black;
                                 border-collapse: collapse;
                                 opacity: 0.95;

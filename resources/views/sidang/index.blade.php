@@ -2,6 +2,7 @@
 
 @section('content')
 <h3 style="text-align: center; margin-bottom: 50px">Data Mahasiswa</h3>
+@include('layouts._alert')
     <a style="margin-bottom: 10px" class="btn btn-primary" href="{{ route('sidang.create') }}">Tambah</a>
     <a style="margin-bottom: 10px" target="_blank" class="btn btn-secondary" href="{{ route('sidang.laporan') }}">Cetak</a>
 
@@ -26,7 +27,7 @@
           <td>{{ $sidang->npm }}</td>
           <td>{{ $sidang->jurusan }}</td>
           <td>{{ $sidang->no_hp }}</td>
-          <td width="130px"> <a class="btn btn-warning btn-sm" href="{{ route('sidang.edit', $sidang) }}">Edit</a>
+          <td width="150px"> <a class="btn btn-warning btn-sm" href="{{ route('sidang.edit', $sidang) }}">Ubah</a>
                         <div class="float-right">
                           <form action="{{ route('sidang.destroy', $sidang) }}" method="POST">
                             {{ csrf_field() }}
